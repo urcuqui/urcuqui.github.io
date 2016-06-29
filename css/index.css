@@ -11,12 +11,24 @@
     src: url("../fonts/SkinnyJeans.ttf") format("opentype");
 }
 
+@font-face {
+
+    font-family: DataSeventy;
+    src: url("../fonts/ufonts.com_data-seventy-plain.ttf") format("opentype");
+}
+
 /*css etiquetas*/
-#name 
+#title_menu 
 {
-	
-
-
+	background-color: black;
+	color: green;
+	width:100%;
+	height: 10%;
+	position: absolute;
+	font-size: 200%;
+	text-align: center;
+	top: 0px;
+	left: 0px;
 }
 
 #about_title
@@ -26,4 +38,15 @@
 #about_content
 {
 	font-family: SkinnyJeans;	
+}
+#lbl_welcome
+{
+	font-family: DataSeventy;	
+}
+#content
+{
+	position: absolute;
+    top: 10%;
+    background-color: floralwhite;
+    left: 0px;
 }
