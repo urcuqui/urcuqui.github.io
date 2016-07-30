@@ -2,6 +2,8 @@
 <html>
 	<head>		
 		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		
 		<title>
 			Christian Urcuqui
 		</title>
@@ -12,10 +14,106 @@
 		<div id="content">
 			</br>
 
-			<label id="about_title">About Me</label>
-			<p id="about_content">Assistant Researcher passionate about ICTs. My topics are oriented to explore and create solutions with artificial intelligence 
-				and computer security. The objetive of my life is to learn and teach for a better world.
-			</p>
+			
+			<table id="table_img_text">
+				<tr>
+						<td style="width: 35%;">
+								<img id="img_kuky" src="images/2390479.jpg" >
+						</td>
+						<td style="position: absolute; top:5%;">
+							<label id="about_title">About Me</label>
+								<p id="about_content">Hi my name is Christian Urcuqui. <br>
+																					   <br>
+									I am System Engineer and Magister in computer science, Assistant Researcher passionate about ICTs. My topics are oriented to explore and create solutions with artificial intelligence 
+									and computer security. The objetive of my life is to learn and teach for a better world.
+								</p>
+						</td>
+				</tr>
+			</table>
+			<table id="table_art_proi">
+				<tr style="height:100%;">
+						<td style="width: 40%; height:100%; position:absolute; background-color:#74EDED">
+								<br>
+								<label id="about_title" style="left: 30%;">Articles</label>
+								<br>
+								<br>
+								<ul style="font-family: sans-serif; width: 80%">
+									<li> Navarro, A., Sebastian, L., Urcuqui, C., Fuentes, M., & Gomez, J. (2014, June). Analisis y caracterizacion de frameworks para deteccion de aplicaciones maliciosas en android. In XIV Jornada Internacional de Seguridad Informática ACIS 2014. 
+ 									</li>
+ 									<br>
+ 									<li>
+ 										Londono, S., Urcuqui, C. C., Amaya, M. F., Gomez, J., & Cadavid, A. N. (2015). SafeCandy: System for security, analysis and validation in Android. Sistemas y Telematica, 13(35), 89-102. 
+ 									</li>
+ 									<br>
+ 									<li>
+ 										Urcuqui, C. C., & Navarro, A. N. (2016, April). Machine learning classifiers for android malware analysis. In 2016 IEEE Colombian Conference on Communications and Computing (COLCOM) (pp. 1-6). IEEE. 
+ 									</li>
+
+								</ul>
+						</td>
+						<td style="position: absolute; width: 75%; left: 40%; height: 100%; background-color: #BB7EF0;">
+							<br>
+
+							<label id="about_title" style="left:40%">Projects</label>
+							<br>
+							<br>
+							<br>
+								<div class="slideshow-container">
+
+									<div class="mySlides">
+										7vit: system 
+									  
+									</div>
+
+									<div class="mySlides fade">
+									  
+									</div>
+
+									<div class="mySlides fade">
+									  
+									</div>
+
+								</div>
+								<br>
+
+								<div style="text-align:center">
+								  <span class="dot" onclick="currentSlide(1)"></span>
+								  <span class="dot" onclick="currentSlide(2)"></span>
+								  <span class="dot" onclick="currentSlide(3)"></span>
+								</div>
+						</td>
+				</tr>
+			</table>
+			
 		</div>
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+
 	</body>
 </html>

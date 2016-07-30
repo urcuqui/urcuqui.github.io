@@ -16,6 +16,11 @@
     font-family: DataSeventy;
     src: url("../fonts/ufonts.com_data-seventy-plain.ttf") format("opentype");
 }
+@font-face {
+
+    font-family: SilkRemington;
+    src: url("../fonts/SilkRemington-SBold.ttf") format("opentype");
+}
 
 /*css etiquetas*/
 #title_menu 
@@ -34,14 +39,20 @@
 #about_title
 {
 	font-family: BornAddict;
+	left:5%;
+	position: relative;
+	font-size: 150%;
 }
 #about_content
 {
-	font-family: SkinnyJeans;	
+	font-family: SilkRemington;	
+	left:5%;
+	position: relative;
 }
 #lbl_welcome
 {
 	font-family: DataSeventy;	
+	font-size: 150%;
 }
 #content
 {
@@ -49,4 +60,26 @@
     top: 10%;
     background-color: floralwhite;
     left: 0px;
+    width: 100%;
+}
+
+#table_img_text 
+{
+	
+	position: relative;
+	left:5%;
+	width: 80%;
+}
+#img_kuky 
+{	
+	height: 70%;
+	border: 2px;
+    border-radius: 25px;
+
+}
+
+#table_art_proi
+{
+	height: 100%;	
+
 }
