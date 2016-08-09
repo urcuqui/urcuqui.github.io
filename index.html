@@ -33,12 +33,13 @@
 			<table id="table_art_proi">
 				<tr style="height:100%;">
 						<td style="width: 40%; height:100%; position:absolute; background-color:#74EDED">
+							<div style="overflow:auto; height: inherit;">
 								<br>
 								<label id="about_title" style="left: 30%;">Articles</label>
 								<br>
 								<br>
 								<ul style="font-family: sans-serif; width: 80%">
-									<li> Navarro, A., Sebastian, L., Urcuqui, C., Fuentes, M., & Gomez, J. (2014, June). Analisis y caracterizacion de frameworks para deteccion de aplicaciones maliciosas en android. In XIV Jornada Internacional de Seguridad Informática ACIS 2014. 
+									<li> Navarro, A., Sebastian, L., Urcuqui, C., Fuentes, M., & Gomez, J. (2014, June). Analisis y caracterizacion de frameworks para deteccion de aplicaciones maliciosas en android. In XIV Jornada Internacional de Seguridad Informatica ACIS 2014. 
  									</li>
  									<br>
  									<li>
@@ -48,8 +49,12 @@
  									<li>
  										Urcuqui, C. C., & Navarro, A. N. (2016, April). Machine learning classifiers for android malware analysis. In 2016 IEEE Colombian Conference on Communications and Computing (COLCOM) (pp. 1-6). IEEE. 
  									</li>
-
+ 									<br>
+ 									<li>
+ 										Lopez, C. C. U., & Cadavid, A. N. (2016). Framework for malware analysis in Android. Sistemas & Telematica, 14(37), 45-56.
+ 									</li>
 								</ul>
+							</div>
 						</td>
 						<td style="position: absolute; width: 75%; left: 40%; height: 100%; background-color: #BB7EF0;">
 							<br>
@@ -61,7 +66,27 @@
 								<div class="slideshow-container">
 
 									<div class="mySlides">
-										7vit: system 
+
+									<table id="table_img_text" style="position:absolute; height: 80%;">
+													<tr style="height:100%;">
+															<td style="width: 20%; height:100%;">
+																	<img class="img_projects" src="images/7vit.png" style="top:40%; position:relative; height:150%;">
+															</td>
+															<td style="position: absolute; top:5%;">
+																<label id="about_title">7Vit</label>
+																	<p id="about_content">
+																		7Vit is a mHealth project. The solution was a
+																		<br> electronic daily for captured the information 
+																		<br> about the most  important features of a 
+																		<br> patient diagnosed with Parkison Disease. 
+																		<br> The features had been selected with a result
+																		<br> of research work in final bachelor project.
+																	</p>
+															</td>
+													</tr>
+									</table>
+
+										
 									  
 									</div>
 
@@ -76,7 +101,7 @@
 								</div>
 								<br>
 
-								<div style="text-align:center">
+								<div style="text-align:center; position: absolute; top: 90%; left: 40%;">
 								  <span class="dot" onclick="currentSlide(1)"></span>
 								  <span class="dot" onclick="currentSlide(2)"></span>
 								  <span class="dot" onclick="currentSlide(3)"></span>
@@ -84,8 +109,8 @@
 						</td>
 				</tr>
 			</table>
-			
 		</div>
+		<img src="images/wolf-animated-gif-22.gif" style="top: 90%; width: 10%; position: absolute;">
 		<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);
