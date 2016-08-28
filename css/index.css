@@ -82,6 +82,8 @@
 #table_art_proi
 {
 	height: 100%;	
+	position: inherit;
+    width: 100%;
 
 }
 .img_projects 
