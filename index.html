@@ -21,11 +21,11 @@
 								<img id="img_kuky" src="images/2390479.jpg" >
 						</td>
 						<td style="top:5%; width:38%;left:2%; background-color: floralwhite; */">
-							<label id="about_title">About Me</label>
-								<p id="about_content">Hi my name is Christian Urcuqui. <br>
+							<label id="about_title" style="left: 10%; top: 35px;">About Me</label>
+								<p id="about_content" style="top: 40px;">Hi my name is Christian Urcuqui. <br>
 																					   <br>
 									I am System Engineer and Magister in Computer Science, Development and Research Leader passionate about ICTs. My research topics are Computer Security
-									and Artificial Intelligent. In addition, I have been working in different research projects integrated by academia, industry and goverment. Finally, my main aim life is to learn, teach and create projects for a better world.
+									and Artificial Intelligent. In addition, I have been working in different research projects integrated by academia, industry and goverment. Finally, my main aim life is to learn, to teach and to create projects for a better world.
 								</p>
 								
 								
@@ -34,7 +34,7 @@
 								</br>
 								</br>
 								</br>
-								<table style="width: 100%; left: 10%; position: relative;">
+								<table style="width: 100%; position: relative;">
 									<tr>
 										<td>
 											<a href="https://github.com/urcuqui" >
@@ -56,21 +56,26 @@
 											CvLAC
 											</a>
 										</td>
+										<td>
+											<p><a href="http://orcid.org"><img alt="ORCID logo" src="http://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16" /></a> <a href="http://orcid.org/0000-0002-4627-1477">http://orcid.org/0000-0002-4627-1477</a></p>
+										</td>
 									</tr>
 								</table>
 						</td>
 						<td style="position: relative; background-color: cadetblue;">
 							<label id="about_title">Professional experience</label>
 								<div style="overflow:auto; height: inherit;">
-									<br>
-									<br>
+																	
 									<ul style="font-family: sans-serif; width: 80%">
-										<li>Assistant Researcher - Universidad Icesi, Jan 2014 - Today 
+										<li>Research and Development Leader - Universidad Icesi, Sept 2016 - Today 
 	 									</li>
 	 									<br>
 	 									<li>
-	 										Teaching Assistant - Universidad Icesi, Jul 2015 - Dec 2015
+	 										Teaching - Universidad Icesi, Jul 2015 - Today
 	 									</li>
+	 									<br>
+										<li>Assistant Researcher - Universidad Icesi, Jan 2014 - Sept 2016 
+	 									</li>	 									
 	 									<br>
 	 									<li>
 	 										System Enginner Junior - Cafeto Software, Sept 2013 - Jan 2014
@@ -108,15 +113,19 @@
 	 									</li>
 	 									<br>
 	 									<li>
-	 										Londono, S., Urcuqui, C. C., Amaya, M. F., Gomez, J., & Cadavid, A. N. (2015). SafeCandy: System for security, analysis and validation in Android. Sistemas y Telematica, 13(35), 89-102. 
+	 										Londono, S., Urcuqui, C., Amaya, M. F., Gomez, J., & Cadavid, A. N. (2015). SafeCandy: System for security, analysis and validation in Android. Sistemas y Telematica, 13(35), 89-102. 
 	 									</li>
 	 									<br>
 	 									<li>
-	 										Urcuqui, C. C., & Navarro, A. N. (2016, April). Machine learning classifiers for android malware analysis. In 2016 IEEE Colombian Conference on Communications and Computing (COLCOM) (pp. 1-6). IEEE. 
+	 										Urcuqui, C., & Navarro, A. N. (2016, April). Machine learning classifiers for android malware analysis. In 2016 IEEE Colombian Conference on Communications and Computing (COLCOM) (pp. 1-6). IEEE. 
 	 									</li>
 	 									<br>
 	 									<li>
-	 										Lopez, C. C. U., & Cadavid, A. N. (2016). Framework for malware analysis in Android. Sistemas & Telematica, 14(37), 45-56.
+	 										Urcuqui, C., & Cadavid, A. N. (2016). Framework for malware analysis in Android. Sistemas & Telematica, 14(37), 45-56.
+	 									</li>
+	 									<br>
+	 									<li>
+	 										Urcuqui, C., Peña, M. G., Quintero, J. L. O., & Cadavid, A. N. (2017). Antidefacement. Sistemas & Telemática, 14(39), 9-27.
 	 									</li>
 									</ul>
 								</div>
@@ -160,13 +169,72 @@
 								</div>
 							</div>
 						</td>
-						<td style="position: absolute; width: 52%; height: 100%; background-color: #BB7EF0;">
+						<td style="position: absolute; width: 49%; height: 100%; background-color: azure;">
 							<br>
 
 							<label id="about_title" style="left:40%">Projects</label>
 							<br>
 							<br>
 							<br>
+							<ul class="tab">
+							  <li><a href="javascript:void(0)" class="tablinks" onclick="openProject(event, 'Cybersecurity')">Cybersecurity</a></li>
+							  <li><a href="javascript:void(0)" class="tablinks" onclick="openProject(event, 'Data')">Data Science</a></li>							  
+							  <li><a href="javascript:void(0)" class="tablinks" onclick="openProject(event, 'Entrepreneurship')">Entrepreneurship</a></li>
+							  <li><a href="javascript:void(0)" class="tablinks" onclick="openProject(event, 'Others')">Others</a></li>
+							</ul>
+
+							<div id="Cybersecurity" class="tabcontent">
+							</br>
+								<h3>Cibersecurity</h3>
+								
+								<li> Safe Candy
+								</li>
+								<br>
+								<li> Ciberseguridad 2.0: Mejoramiento de la seguridad de la información a los sitios web de las entidades públicas, por medio de una arquitectura de control informático
+								</li>
+								<br>
+								<li>
+									Analysis and anomalies detection in network traffic
+								</li>
+								<br>
+								<li>
+									Security system to Android malware analysis
+								</li>
+							</div>
+							<div id="Data" class="tabcontent">
+								</br>
+								<h3>Data Science</h3>
+								<li> Analytics & Big Data in smart grid
+								</li>
+								
+							</div>
+							<div id="Entrepreneurship" class="tabcontent">
+								</br>
+								<h3>Entrepreneurship</h3>
+								
+								<li> Townie
+								</li>
+								<br>
+								<li> FList
+								</li>
+								
+							</div>
+							<div id="Data" class="tabcontent">
+								</br>
+								<h3>Data Science</h3>
+								<li> Analytics & Big Data in smart grid
+								</li>
+								
+							</div>
+							<div id="Others" class="tabcontent">
+								</br>
+								<h3>Others</h3>
+								
+								<li> Programa Estratégico para Desarrollo de Capacidades Tecnológicas en comprobación Técnica del Espectro
+								</li>
+							</div>
+							<!--
+
 								<div class="slideshow-container">
 
 									<div class="mySlides">
@@ -280,10 +348,11 @@
 								  <span class="dot" onclick="currentSlide(4)"></span>
 								  <span class="dot" onclick="currentSlide(5)"></span>
 								</div>
+							-->
 						</td>
 				</tr>
 			</table>
-		<!--</div>		-->	
+		<!--</div>		
 		<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);
@@ -311,7 +380,23 @@
 		  slides[slideIndex-1].style.display = "block";
 		  dots[slideIndex-1].className += " active";
 		}
-		</script>
+		</script>-->	
+		<script>		
+			function openProject(evt, projectName) {
+			    var i, tabcontent, tablinks;
+			    tabcontent = document.getElementsByClassName("tabcontent");
+			    for (i = 0; i < tabcontent.length; i++) {
+			        tabcontent[i].style.display = "none";
+			    }
+			    tablinks = document.getElementsByClassName("tablinks");
+			    for (i = 0; i < tablinks.length; i++) {
+			        tablinks[i].className = tablinks[i].className.replace(" active", "");
+			    }
+			    document.getElementById(projectName).style.display = "block";
+			    evt.currentTarget.className += " active";
+			}
+
+		</script
 
 	</body>
 </html>
