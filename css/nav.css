@@ -132,7 +132,7 @@ ul.tab li a:focus, .active {
     display: none;
     padding: 6px 12px;
     position: inherit;
-    background-color: #f1f1f1;
+    background-color: #ccc;
     top: 17%;
     width: 96%;       
 }
