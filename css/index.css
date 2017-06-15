@@ -23,7 +23,7 @@
 }
 
 /*css etiquetas*/
-#title_menu 
+#title_menu
 {
 	background-color: black;
 	color: green;
@@ -51,7 +51,7 @@
 }
 #lbl_welcome
 {
-	font-family: DataSeventy;	
+	font-family: DataSeventy;
 	font-size: 150%;
 }
 #content
@@ -64,15 +64,15 @@
     height: 55%;
 }
 
-.table_img_text 
+.table_img_text
 {
-	
+
 	position: relative;
 	left:5%;
 	width: 80%;
 }
-#img_kuky 
-{	
+#img_kuky
+{
 	height: 70%;
 	border: 2px;
     border-radius: 25px;
@@ -88,7 +88,7 @@
 
 }
 
-.img_projects 
+.img_projects
 {
 
 	height: 20%;
@@ -104,7 +104,7 @@ button.accordion {
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;    
+    text-align: left;
     outline: none;
     transition: 0.4s;
 }
@@ -121,4 +121,20 @@ button.accordion.active, button.accordion:hover {
 div.panel {
     padding: 0 18px;
     display: none;
+}
+
+
+/* information project modal */
+.modal_project
+{
+   visibility: hidden;
+   z-index: 2;
+   height: 50%;
+   position: absolute;
+   width: 70%;
+   left: 22%;
+   top: 25%;
+   background-color: white;
+   box-shadow: 10px 10px 5px #888888;
+   overflow: auto;
 }
