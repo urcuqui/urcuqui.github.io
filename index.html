@@ -194,15 +194,13 @@
 							<table>
 								<tr>
 									<td>
-										<img class="img_projects" src="images/android.png" onclick="openModal(event, 'Cybersecurity')"
+										<img class="img_projects" id="img_android" src="images/android.png" onclick="openModal(event, 'Cybersecurity_android')"
 										style=" position:inherit; height:200px; width:200px;">
 									</td>
 									<td>
-										<img class="img_projects" src="images/websec.jpg" style=" position:relative; height:200px; width:200px;">
+										<img class="img_projects" src="images/websec.jpg" id="img_websec" style=" position:relative; height:200px; width:200px;" onclick="openModal(event, 'Cybersecurity_web')">
 									</td>
-									<!--<td>
-										<img class="img_projects" src="images/android.png" style="position:relative; height:200px; width:200px;">
-									</td>-->
+
 								</tr>
 								<tr>
 								</tr>
@@ -407,22 +405,28 @@
 			implements both static and dynamic analysis of AVDs’ environments architecture. Additionally, the solution implements a cloud architecture that connects
 			various malware databases, for which decision-making. SafeCandy implements various advantages found in the study of the state of the art; in order to measure the performance, we demonstrated its capacities through an experiment that includes different malwares and beningn applications (they are from malicious databases and Google Play respectively).</p>
 		</div>
-<!--
-		<button class="accordion">Ciberseguridad 2.0</button>
-		<div class="panel">
-			<p> It is a project that search to develop a security system to analysis and to prevent the website defacement in public entities sites. Indeed, during these times
-				we explored the state of the art, we worked with some public entities and we proved our system through some experiments with real infraestructures</p>
-		</div>
-
-		<button class="accordion">Security Web Applications</button>
-		<div class="panel">
-			<p>This project has two focuses, firstly to apply an analysis of anomalies and to detection of these in network traffic, and secondly a reseach of how to identify malicious websites through the analysis in web traffic</p>
-		</div>-->
 		<button class="accordion">Android Security & Machine Learning</button>
 		<div class="panel">
 			<p>This project is a forward of safe candy. During this time we researched and developed a framework to detect malicious software in Android, integrated by static analysis through the evaluation of permissions of benign and malware</p>
 		</div>
 
+</div>
+<div class="modal_project" id="cybersecurity_modal_web">
+	<label id="about_title" style="left: 40%; top: 5px;">Web Security</label>
+	<img class="img_projects" src="images/1497519706_fileclose.png" onclick="closeModal(event, 'Cybersecurity_web_close')"
+	style=" position:absolute; height:50px; width:50px;right: 0px;">
+	<br>
+	<br>
+			<button class="accordion">Ciberseguridad 2.0</button>
+			<div class="panel">
+				<p> It is a project that search to develop a security system to analysis and to prevent the website defacement in public entities sites. Indeed, during these times
+					we explored the state of the art, we worked with some public entities and we proved our system through some experiments with real infraestructures</p>
+			</div>
+
+			<button class="accordion">Security Web Applications</button>
+			<div class="panel">
+				<p>This project has two focuses, firstly to apply an analysis of anomalies and to detection of these in network traffic, and secondly a reseach of how to identify malicious websites through the analysis in web traffic</p>
+			</div>
 </div>
 
 
@@ -445,9 +449,13 @@
 			function openModal(evt, type)
 			{
 				var i, type_button, tablinks;
-				if(type == "Cybersecurity")
+				if(type == "Cybersecurity_android")
 				{
 					document.getElementById('cybersecurity_modal').style.visibility ="visible";
+				}
+				if(type == "Cybersecurity_web")
+				{
+					document.getElementById('cybersecurity_modal_web').style.visibility ="visible";
 				}
 			};
 			function closeModal(evt, type)
@@ -456,6 +464,10 @@
 				if(type == "Cybersecurity_close")
 				{
 					document.getElementById('cybersecurity_modal').style.visibility ="hidden";
+				}
+				if(type == "Cybersecurity_web_close")
+				{
+					document.getElementById('cybersecurity_modal_web').style.visibility ="hidden";
 				}
 			};
 

@@ -93,9 +93,19 @@
 
 	height: 20%;
 	border: 2px;
-    border-radius: 25px;
+  border-radius: 25px;
 
 }
+#img_android:hover
+{
+   box-shadow: 10px 10px 5px #888888;
+
+}
+#img_websec:hover
+{
+   box-shadow: 10px 10px 5px #888888;
+}
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 button.accordion {
